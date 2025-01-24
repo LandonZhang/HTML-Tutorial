@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签学习</title>
+</head>
+
+<body>
+
+<!--表格table
+行标签： tr
+列标签： td
+表头标签：th
+设置外边框： border="{像素值}"
+-->
+
+<table border="1px">
+  <caption>测试表格:</caption>
+
+  <thead>
+    <tr>
+      <th>第一列</th>
+      <th>第二列</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <!--跨列显示-->
+      <td colspan="3">1-1</td>
+    </tr>
+    <tr>
+      <!--跨行显示-->
+      <td rowspan="2">2-1</td>
+      <td>2-2</td>
+      <td>2-3</td>
+    </tr>
+    <tr>
+      <td>3-1</td>
+      <td>3-2</td>
+    </tr>
+  </tbody>
+
+
+</table>
+
+</body>
+</html>
+
+
+
+
+

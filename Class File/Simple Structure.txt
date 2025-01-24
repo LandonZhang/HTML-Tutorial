@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>这是文档标题</title>
+</head>
+
+
+<body>
+
+<strong>这是加粗文字</strong>
+
+</body>
+
+</html>

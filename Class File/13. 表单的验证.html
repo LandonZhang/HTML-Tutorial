@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<body>
+
+<h1>注册</h1>
+
+<!--表单form
+action: 表单提交的位置，可以是网站或者请求处理的地址
+method: 表单不同的提交方式（post、get）
+  get方式提交：我们可以在action指定的页面的url中显示提交的信息，高效但不安全
+  post方式提交：密码无法在url中显示（可以在网络->负载中查看），可以传输大文件
+-->
+
+<form action="1.%20html初识.html" method="get">
+
+    <!--文本输入框设置输入提示
+    placeholder --提示信息
+    -->
+    <p>名字:<input type="text" name="username" maxlength="8" size="30" placeholder="请输入用户名"></p>
+
+    <!--密码框设置必填提示
+    required  --必填项，否则不能提交
+    -->
+    <p>密码:<input type="password" name="pwd" value="123456" required></p>
+
+    <!--单选框
+    设置单选框禁用:disabled
+    -->
+    <p>性别:
+        <input type="radio" value="boy" name="sex" checked disabled/>男
+        <input type="radio" value="girl" name="sex" disabled/>女
+    </p>
+
+    <!--多选框
+    checked参数表示默认选择
+    -->
+    <p>爱好:
+        <input type="checkbox" value="sleep" name="hobby"/>睡觉
+        <input type="checkbox" value="code" name="hobby" checked/>敲打吗
+        <input type="checkbox" value="game" name="hobby"/>游戏
+        <input type="checkbox" value="girl" name="hobby"/>女孩
+    </p>
+
+    <!--按钮
+    input type="button"
+    input type="image"  --点击之后提交表单
+    input type="submit"
+    input type="reset"
+    -->
+    <p>按钮:
+        <input type="button" name="btn1" value="点击变长">
+        <br>
+        <input type="image" src="../resources/img/1.jpg" width="768" height="432">
+    </p>
+
+    <!--文件域-->
+    <p>请上传文件:
+        <input type="file" name="files">
+        <input type="button" value="上传" name="upload">
+    </p>
+
+    <!--下拉框
+    selected:表示默认选中的值
+    -->
+    <p>下拉框:
+        <select name="country" size="2">
+            <option value="US" >美国</option>
+            <option value="CN" >中国</option>
+            <option value="AUS">澳大利亚</option>
+            <option value="INDIA">印度</option>
+        </select>
+    </p>
+
+    <!--文本域:多行文本
+    rows:表示行数
+    cols:表示列数
+    name:表示输入后端的键值
+    -->
+    <p>个人介绍:
+        <textarea name="textarea" cols="50" rows="2">请输入个人介绍
+    </textarea>
+    </p>
+
+    <!--带验证的一些功能-->
+
+    <!--邮件验证-->
+    <p>邮件:
+        <input type="email" name="email">
+    </p>
+
+    <!--URL验证-->
+    <p>URL:
+        <input type="url" name="url">
+    </p>
+
+    <!--数字验证
+    step:点击增加按钮增加的数值
+    -->
+    <p>数字:
+        <input type="number" name="num" max="100" min="0" step="2">
+    </p>
+
+    <!--滑块功能-->
+    <p>滑块:
+        <input type="range" name="voice" min="0" max="100" step="2">
+    </p>
+
+    <!--搜索框
+    设置"pattern"确保数字输入
+    -->
+    <p>关键词输入:
+        <input type="search" name="search" id="search" pattern="[1-9]*">
+    </p>
+
+    <!--label标签用于增强鼠标可用性-->
+    <p>
+        <label for="intro">你点我试试:</label>
+        <input type="text" name="intro" id="intro">
+    </p>
+
+
+    <!--提交框与重置框, type="submit" type="reset"-->
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+
+</form>
+
+</body>
+</html>
